@@ -1,0 +1,45 @@
+package ExercicioUm;
+
+import java.util.Scanner;
+
+public class ExMatriz1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		int [][] nubers = new int [3][3]; //3 linhas por 3 colunas
+		int linha, coluna, somaDP=0, SomaDS=0; //Variavel da linha coluna e somas das diagonais
+		String elementosDP="", elementosDS=""; 
+		
+		Scanner leia = new Scanner (System.in);
+		
+		
+		
+		for(linha=0;linha <3; linha++) { 
+			for(coluna=0; coluna<3;coluna++) { 
+				System.out.printf("\nDigite um numero na posição [%d][%d]: ",linha,coluna);
+						 nubers[linha][coluna] = leia.nextInt();
+						 
+						 if(linha == coluna) { // para saber os elementos da diagonal principal
+							 elementosDP += nubers [linha][coluna]+" ";
+							 somaDP += nubers [linha][coluna];
+						 }
+						 
+						 
+						 
+						 if(linha+coluna==2) { //para saber os elementos da diagonal secundaria
+							 elementosDS += nubers [linha][coluna]+" ";
+							 SomaDS = nubers[linha][coluna];
+						 }
+						 
+			}
+		}
+		System.out.println("\nElementos da diagonal principal: "+elementosDP);
+		System.out.println("\nElementos da diagonal secundaria: "+elementosDS);
+		System.out.println("\nSomatorio da diagonal principal: "+somaDP);
+		System.out.println("\nSomatorio da diagonal secundaria: "+SomaDS);
+
+	}
+
+}
