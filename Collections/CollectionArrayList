@@ -1,1 +1,48 @@
 
+package ExercicioUm;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Scanner;
+
+public class CollectionArrayList {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+				
+				ArrayList<String> ListaSet = new ArrayList<String>();
+				
+				
+				Scanner leia = new Scanner(System.in);
+				
+				for (int one = 0; one <5 ; one++) {
+		            System.out.println("Digite 5 cores que deseja: ");
+
+		            String cor = leia.nextLine();
+		            ListaSet.add(cor);
+		        }
+				
+				
+				System.out.println("\nTotal de cores: ");
+				System.out.println(ListaSet);
+				
+				System.out.println("\n////////////////////////////////////////////////////////");
+				
+				Collections.sort(ListaSet);
+				System.out.println("\nDepois de ordenado..." +ListaSet);
+				System.out.println();
+				
+			
+				System.out.println("\n////////////////////////////////////////////////////////");
+				
+				
+				
+				
+				
+			}
+
+		
+	}
+
+
