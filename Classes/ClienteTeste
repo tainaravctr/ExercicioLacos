@@ -1,0 +1,19 @@
+package POO;
+
+public class ClienteTeste {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Cliente[] lista = new Cliente[4];
+		 
+		lista[0] = new Cliente("Tainara","feminino",19 , 268962516,"Rua das Margaridas");
+		lista[1] = new Cliente("\nAntonio","masculino",46 , 959655523,"Rua das Flores");
+		lista[2] = new Cliente("\nMaria","femino",56, 684898625,"Rua do Girassol");
+		lista[3] = new Cliente("\nGustavo","masculino",16 ,785365426,"Rua das Rosas");
+		
+		for(Cliente roda:lista) {
+			roda.imprimirInfo();
+		}
+	}
+}
