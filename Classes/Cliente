@@ -9,12 +9,12 @@ public class Cliente {
 	private String nome;
 	private String sexo;
 	private int idade;
-	private long cpf;
+	private int cpf;
 	
 	
 	
 	//construtor
-	public Cliente(String nome, String sexo, int idade, long cpf, String endereco) {
+	public Cliente(String nome, String sexo, int idade, int cpf, String endereco) {
 		super();
 		this.nome = nome;
 		this.sexo = sexo;
@@ -67,7 +67,7 @@ public class Cliente {
 
 
 
-	public void setTelefone(long cpf) {
+	public void setCpf(int cpf) {
 		this.cpf = cpf;
 	}
 
