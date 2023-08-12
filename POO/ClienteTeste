@@ -1,0 +1,24 @@
+package POO;
+
+public class ClienteTeste {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+
+		 
+		Cliente Tainara = new Cliente("Tainara","feminino",19 , 894841658,"Rua das Margaridas");
+		Cliente Antonio = new Cliente("\nAntonio","masculino",46 , 05614644565,"Rua das Flores");
+		PessoaFisica Maria = new PessoaFisica("\nMaria","femino",56, 015164,"Rua do Girassol");
+		PessoaFisica Gustavo = new PessoaFisica("\nGustavo","masculino",16 ,785365426,"Rua das Rosas");
+		PessoaJuridica Matilde = new PessoaJuridica("\nMatilde","feminino",60 ,785365426,"Rua do EUA", "Bolos da vovo", "94563144849445");
+		PessoaJuridica Nayane = new PessoaJuridica("\nNayane","feminino",18 ,785365426,"Rua Novohorizonte", "Bonecas Inflaveis", "56574781615914");
+		
+		Tainara.ver();
+        Antonio.ver();
+        Maria.ver();
+        Gustavo.ver();
+        Matilde.ver();
+        Nayane.ver();
+	}
+}
