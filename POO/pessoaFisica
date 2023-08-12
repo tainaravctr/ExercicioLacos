@@ -1,0 +1,38 @@
+import POO.Cliente;
+
+public class PessoaFisica extends Cliente {
+	
+		
+		private String cpf;
+		
+		public PessoaFisica(String nome, String sexo, int idade, int i, String cpf, String endereco) {
+			super(nome, sexo, idade, cpf, endereco);
+			this.cpf = cpf;
+		}
+		
+		
+		//getters and setters
+		public String getCpf() {
+			return cpf;
+		}
+
+		
+		
+		public void setCpf(String cpf) {
+			this.cpf = cpf;
+		}
+		
+		
+		
+		//specific method
+		public void imprimirInfo() {
+			System.out.println("\nNome do cliente: " +getNome());
+			System.out.println("\nSexo do cliente: " +getSexo());
+			System.out.println("\nIdade do cliente: " +getIdade());
+			System.out.println("\nNúmero de cpf do cliente: " +getCpf());
+			System.out.println("\nEndereço completo cliente: " +getEndereco());
+		}
+		
+}
+
+
