@@ -1,0 +1,43 @@
+import POO.Cliente;
+
+public class PessoaJuridica extends Cliente {
+
+	
+	private String cnpj;
+	private String nomeFantasia;
+	
+	public PessoaJuridica(String nome, String sexo, int idade, int i, String endereco, String nomeFantasia, String cnpj) {
+		super(nome, sexo, idade, i, endereco);
+		this.nomeFantasia;
+		this.cnpj = cnpj;
+	}
+	
+	//getters e setters
+	public String getCnpj() {
+		return cnpj;
+	}
+
+	public void setCnpj(String cnpj) {
+		this.cnpj = cnpj;
+	}
+
+	public String getNomeFantasia() {
+		return nomeFantasia;
+	}
+
+	public void setNomeFantasia(String nomeFantasia) {
+		this.nomeFantasia = nomeFantasia;
+	}
+	
+	
+	//specific method
+	
+	public void imprimirInfo() {
+		System.out.println("\nNome do dono da empresa: " +getNome());
+		System.out.println("\nSexo do cliente: " +getSexo());
+		System.out.println("\nIdade do cliente: " +getIdade());
+		System.out.println("\nNúmero do CNPJ cliente: " +getCnpj());
+		System.out.println("\nEndereço completo cliente: " +getEndereco());
+		System.out.println("\nNome da fantasia da empresa: " +getNomeFantasia());
+	}
+}
